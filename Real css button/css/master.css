@@ -1,0 +1,45 @@
+body {
+    background-color: #d7d7d7;
+    color: black;
+}
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Center the button on the page */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Circular button styling */
+.circular-button {
+    width: 120px; /* Adjust size as needed */
+    height: 120px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes the button circular */
+    background-image: url('../images/bttn.png'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the button */
+    background-position: center; /* Centers the image */
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    transition: all 0.3s ease; /* Smooth transition for hover and active effects */
+}
+
+/* Hover effect */
+.circular-button:hover {
+    transform: scale(1.1); /* Slightly enlarges the button on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Enhances shadow on hover */
+}
+
+/* Active (pressed) effect */
+.circular-button:active {
+    transform: translateY(4px) scale(1); /* Moves the button down and resets scale */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduces shadow to give a pressed effect */
+}

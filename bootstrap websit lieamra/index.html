@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LIEAMRA ليامرا</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style/bootstrap.min.css">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/all.css">
+
+</head>
+
+<body dir="rtl" class="bg-body-secondary">
+  <nav class="navbar fixed-top  bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.png" alt="ليامرا برمجه" width="60" height="50" class=""> <a></a>
+      </a>
+
+
+      <!-- navbar -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">الرئيسيه</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              البرمجه
+            </a>
+            <ul class="dropdown-menu text-lg-end">
+              <li><a class="dropdown-item" href="#">برامج ادارة المؤسسات</a></li>
+              <li><a class="dropdown-item" href="#">برامج نقاط البيع والمخازن</a></li>
+              <li><a class="dropdown-item" href="#">برامج ادارة الجامعات</a></li>
+              <li><a class="dropdown-item" href="#">برمجه تحت الطلب ومشاريع</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              الانترنت
+            </a>
+            <ul class="dropdown-menu text-lg-end">
+              <li><a class="dropdown-item" href="#">ادارة مواقع الانترنت</a></li>
+              <li><a class="dropdown-item" href="#">برمجة وتصميم المواقع</a></li>
+              <li><a class="dropdown-item" href="#">صيانة وحماية المواقع</a></li>
+
+            </ul>
+
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              الصيانه
+            </a>
+            <ul class="dropdown-menu text-lg-end">
+              <li><a class="dropdown-item" href="#">صيانة سوفتوير</a></li>
+              <li><a class="dropdown-item" href="#">صيانة اجهزه وشبكات</a></li>
+              <li><a class="dropdown-item" href="#">صيانة انظمة وقواعد البيانات</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              الكورسات
+            </a>
+            <ul class="dropdown-menu text-lg-end">
+              <li><a class="dropdown-item" href="#">كورسات برمجة ومشاريع</a></li>
+              <li><a class="dropdown-item" href="#">كورسات شبكات واتصالات</a></li>
+              <li><a class="dropdown-item" href="#">كورسات اون لاين </a></li>
+              <li><a class="dropdown-item" href="#"> اختبارات وشهادات</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              اطلب خدمة
+            </a>
+            <ul class="dropdown-menu text-lg-end">
+              <li><a class="dropdown-item" href="#">برمجيات</a></li>
+              <li><a class="dropdown-item" href="#">مواقع انترنت</a></li>
+              <li><a class="dropdown-item" href="#">عقود صيانة وحمايه</a></li>
+              <li><a class="dropdown-item" href="#">حجز كورسات واستشارات تقنيه</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">من نحن</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">اتصل بنا</a>
+          </li>
+        </ul>
+        <!--
+            <form class="d-flex" role="search"> 
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> 
+             -->
+        <!-- end navbar -->
+
+      </div>
+
+      <!-- canvas -->
+      <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+        aria-controls="offcanvasExample">
+        <div class="text-white"><span class="text-white"> LIEAMRA &nbsp; </span>
+          <!--i class="fa-solid fa-house-chimney"></i>-->
+          <i class="fa-solid fa-database"></i>
+        </div>
+      </a>
+
+    </div>
+  </nav>
+
+  <div> </div>
+
+  <!--carousel slider-->
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/lieamra 1 ليامرا.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>استضافات وتصميمات وبرمجة مواقع الانترنت</h5>
+          <p>ليامرا توفر لموقعك تصميمات رائعه وادارة وحماية فائقه , معنا سيكون موقعك الاكثر سهولة وجمالا وانتشار</p>
+          <button class="btn btn-dark">اطلب الخدمه</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/lieamra 2 ليامرا.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>الصيانه والحماية هارد و سوفت</h5>
+          <p>ليامراتضمن لك الحمايه والصيانه لقواعد بياناتك ولاجهزتك وبرامجك وشبكتك المحليه والدوليه</p>
+          <button class="btn btn-dark">اطلب الخدمه</button>
+        </div>
+
+      </div>
+      <div class="carousel-item">
+        <img src="images/lieamra 3 ليامرا.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>برمجيات ليامرا</h5>
+          <p>برامج ادارة المؤسسات التعليميه والتجاريه والماليه والصحيه قمة في الاداء سهولة وثبات وانجاز</p>
+          <button class="btn btn-dark">اطلب الخدمه</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/lieamra 4 ليامرا.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>كورسات ليامرا</h5>
+          <p>احصل علي شهادات معتمده وقويه لتعليم رائع ومتطور في لغات البرمجه وقواعد البيانات وتصميم المواقع</p>
+          <button class="btn btn-dark">اطلب الخدمه</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <i class="fa-solid fa-backward-fast myicon"></i>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <i class="fa-solid fa-forward-fast myicon"></i>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <hr>
+  <!-- services -->
+  <section id="services" class="text-center">
+    <div><button class="btn btn-danger">OUR SERVICES ... خدماتنا</button></div>
+    <div>
+      <button class="btn btn-outline-primary m-4">خدمات البرمجة</button>
+      <button class="btn btn-outline-primary m-4">خدمات الانترنت</button>
+      <button class="btn btn-outline-primary m-4">الحماية والصيانه</button>
+      <button class="btn btn-outline-primary m-4">كورسات وشهادات</button>
+    </div>
+
+    <div class="container">
+      <div class="d-flex justify-content-evenly flex-wrap">
+
+        <div class="card p-2 text-center" style="width: 18rem;">
+          <img src="images/lieamra 4 ليامرا.jpg" class="card-img-top" alt="..." data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">ادارة المؤسسات التعليميه</h5>
+
+            <div class="starso">
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <p class="card-text">انظمه متكامله لادارة شئون الطلاب والموظفين والحسابات والكونترول والشهادات للكليات
+              العمليه والنظريه والمعاهد والمدارس الي جانب الموقع الاليكترونى الخاص بنشاطك ونشاط المستخدمين والعملاء
+              واععضاء المؤسسه</p>
+            <a href="#" class="btn btn-primary">اطلب الخدمه <i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+        </div>
+        <div class="card p-2 text-center" style="width: 18rem;">
+          <img src="images/lieamra 3 ليامرا.jpg" class="card-img-top" alt="..." data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">ادارة المؤسسات الصحية</h5>
+
+            <div class="starso">
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <p class="card-text">برامج ادارة المستشفيات والعيادات والمراكز الطبيه بمختلف تخصصاتها وادارة الصيدليات
+              ومستودعات الادويه ومتابعه علي مدار الساعه الي جانب الموقع الاليكترونى الخاص بنشاطك ونشاط المستخدمين
+              والعملاء واعضاء المؤسسه</p>
+            <a href="#" class="btn btn-primary">اطلب الخدمه <i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+        </div>
+        <div class="card p-2 text-center" style="width: 18rem;">
+          <img src="images/lieamra 2 ليامرا.jpg" class="card-img-top" alt="..." data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">ادارة المؤسسات التجاريه</h5>
+
+            <div class="starso">
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <p class="card-text">برامج نقاط البيع وادارة الهايبر ماركت والسزبرماركت والمحلات التجاريه الفرديه والسلاسل
+              والمخازن بنظام روعه في السهوله والدقه والاستخدام الي جانب الموقع الاليكترونى الخاص بنشاطك ونشاط المستخدمين
+              والعملاء</p>
+            <a href="#" class="btn btn-primary">اطلب الخدمه <i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+        </div>
+        <div class="card p-2 text-center" style="width: 18rem;">
+          <img src="images/lieamra 1 ليامرا.jpg" class="card-img-top" alt="..." data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">برمجة مؤسستك</h5>
+
+            <div class="starso">
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <p class="card-text">لدينا فريق متمكن في تحليل بيانات مؤسستك لبرمجة النطام المناسب لكل قسم فيها بالشكل
+              والاداء الذي تريد مع التدريب علي كل مكونات البرامج الي جانب الموقع الاليكترونى الخاص بنشاطك ونشاط
+              المستخدمين والعملاء</p>
+            <a href="#" class="btn btn-primary"> اطلب الخدمه <i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+
+  </section>
+ 
+  <!-- CONTACT US -->
+  <section id="contactus" class="contactus">
+    <div class="w-50 mx-auto ">
+      <h4 class="bluecontact text-center pt-5 "> تواصل معنا</h4>
+      <p class="bluecontact text-center">يمكنكم التواصل معنا عن طريق مقر شركتنا او تليفونيا علي 01118777068 او عن طريق
+        ايميل جوجل او ارسال رساله علي الموقع </p>
+
+      <input class="form-control mb-3" type="text" placeholder="البريد الاليكترونى">
+      <div class="text-center"><button class="btn btn-primary">اشترك معنا <i class="fa-solid fa-handshake"></i></button></div>
+
+    </div>
+
+  </section>
+
+
+  <!-- end CONTACT US -->
+  <hr class="mt-3">
+  <!-- messageus -->
+    <section id="order">
+    <div class="msgbg d-flex">
+      <div class="container border bg-transparent mt-5 rounded text-center" >
+         <HR>
+            <h3 class="fw-bold">MESSAGE .<i class="fa-solid fa-envelope text-primary " ></i>. US</h3>
+         <HR>
+
+
+          <div class="row d-flex">
+            <div class="col-sm-6">
+                <label for="">NAME</label>
+                <input class="form-control mb-3" type="text" placeholder="اسم العميل">
+           </div>
+              <div class="col-sm-6">
+                <label for="">E-MAIL</label>
+                <input class="form-control mb-3" type="text" placeholder="ايميل العميل">
+              </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-sm-6">
+                <label for="">TEL.NO</label>
+                <input class="form-control mb-3" type="text" placeholder="رقم التليفون">
+           </div>
+              <div class="col-sm-6">
+                <label for="">TITLE</label>
+                <input class="form-control mb-3" type="text" placeholder="عنوان الرساله او الطلب">
+              </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+              <label for="">DETAILS </label>
+              <textarea class="form-control mb-3" type="text" placeholder="تفاصيل الرساله او الطلب"></textarea>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+              <button class="btn btn-primary w-25 mb-4">  SEND  <i class="fa-solid fa-envelope-circle-check"></i></button>
+            </div> 
+          </div>
+
+
+      </div>
+    </div>  
+    </section>
+    <hr>
+  <!-- end messageus -->
+
+
+ <!--our partners-->
+ <section id="partners" class="text-center fs-5">
+ 
+    <h4 class="text-center fs-2 fw-bolder mb-4">شركاء <i class="fa-solid fa-handshake text-primary "></i> النجاح</h4>
+     <div class="row d-flex">
+      <div class="d-flex justify-content-evenly flex-wrap">
+          
+        <div class="col text-bg-primary"><h3 class=" fs-6 mt-2 d-flex justify-content-center flex-wrap">المعهد العالى للهندسه </h3>
+          <div>
+            <hr>
+            <img src="images/prtnr1.png" class="w-100 " alt="">
+            <hr>
+            <p> In-Egypt</p>
+            <HR>
+            <p>Since 2017</p>
+          </div>
+        
+        </div>
+        <div class="col text-bg-primary"><h3 class=" fs-6 d-flex justify-content-center flex-wrap" > مودرن سكول النزهة</h3>
+          <div>
+            <hr>
+            <img src="images/prtnr3.png" class="w-100 " alt="">
+            <hr>
+            <p> In-Egypt</p>
+            <HR>
+            <p>Since 2017</p>
+          </div>
+        </div>
+        <div class="col text-bg-primary"><h3 class="fs-6 d-flex justify-content-center flex-wrap" >مودرن سكول الزهراء</h3>
+          <div>
+            <hr>
+            <img src="images/prtnr3.png" class="w-100 " alt="">
+            <hr>
+            <p> In-Egypt</p>
+            <HR>
+            <p>Since 2017</p>
+          </div>
+        </div>
+        <div class="col text-bg-primary"><h3 class="fs-6 d-flex justify-content-center flex-wrap" >مودرن سكول الطلائع</h3>
+          <div>
+            <hr>
+            <img src="images/prtnr3.png" class="w-100 " alt="">
+            <hr>
+            <p> In-Egypt</p>
+            <HR>
+            <p>Since 2017</p>
+          </div>
+        </div>
+        <div class="col text-bg-primary"><h3 class="fs-6 d-flex justify-content-center flex-wrap" >مدارس الضياء الخاصة</h3>
+        
+          <div>
+            <hr>
+            <img src="images/prtnr4.png" class="w-100 " alt="">
+            <hr>
+            <p> In-Egypt</p>
+            <HR>
+            <p>Since 2017</p>
+          </div>
+        </div>
+        <div class="col text-bg-primary"><h3 class="fs-6 d-flex justify-content-center flex-wrap" >مدارس نور الضياء الخاصه</h3>
+          <div>
+            <hr>
+            <img src="images/prtnr4.png" class="w-100 " alt="">
+            <hr>
+            <p> In-Egypt</p>
+            <HR>
+            <p>Since 2017</p>
+          </div>
+        
+        </div>
+        <div class="col text-bg-primary"><h3 class="fs-6 d-flex justify-content-center flex-wrap" >مدارس الرسالة الخاصه</h3>
+          <div>
+            <hr>
+            <img src="images/prtnr2.png" class="w-100 " alt="">
+            <hr>
+            <p> In-Egypt</p>
+            <HR>
+            <p>Since 2017</p>
+          </div>
+        
+        </div>
+        <div class="col text-bg-primary"><h3 class="fs-6 d-flex justify-content-center flex-wrap" >مدارس الشرق الاوسط</h3>
+          <div>
+            <hr>
+            <img src="images/prtnr5.png" class="w-100 " alt="">
+            <hr>
+            <p> In-Egypt</p>
+            <HR>
+            <p>Since 2017</p>
+          </div>
+        
+        </div>
+        <div class="col text-bg-primary"><h3 class="fs-6 d-flex justify-content-center flex-wrap" >صيدلات بلادى مكه</h3>
+          <div>
+            <hr>
+            <img src="images/prtnr6.png" class="w-100 " alt="">
+            <hr>
+            <p> In-Egypt</p>
+            <HR>
+            <p>Since 2017</p>
+          </div>
+        
+        </div>
+        <div class="col text-bg-primary"><h3 class="fs-6 d-flex justify-content-center flex-wrap" >صيدلية محمد عبده</h3>
+          <div>
+            <hr>
+            <img src="images/prtnr7.png" class="w-100 " alt="">
+            <hr>
+            <p> In-Egypt</p>
+            <HR>
+            <p>Since 2017</p>
+          </div>
+        
+        </div>
+        <div class="col text-bg-primary"><h3 class="fs-6" >مكتبة امانى</h3>
+          <div>
+            <hr>
+            <img src="images/prtnr8.png" class="w-100 " alt="">
+            <hr>
+            <p> In-Egypt</p>
+            <HR>
+            <p>Since 2017</p>
+          </div>
+        
+        </div>
+     </div>
+     <h4 class="text-center fs-2 fw-bolder mb-4 mt-4" >ليامرا  <i class="fa-solid fa-handshake text-primary "> </i>  تشكركم  </h4>
+  </div>
+
+ </section>
+ <hr class="mt-5 mb-5">
+   <!-- policy -->
+ <section id="contract" class="mb-5 mt-5">
+    <div class="container  text-center">
+      <button class="btn btn-primary fs-5 fw-bold " data-bs-toggle="collapse" data-bs-target="#collapseExample">سياسات
+        الشركة
+      </button>
+      <button class="btn btn-danger  w-25 fs-5 fw-bold" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasExample">اطلب
+        الخدمه <i class="fa-solid fa-cart-flatbed-suitcase "></i> 
+      </button>
+      <div class="collapse bg-gradient mt-3 " id="collapseExample">
+        <div class="card card-body ">
+          <h5 class="text-center text-danger bg-gradient fs-4 fw-bold ">سياسة خدمات ليامرا </h5>
+
+
+
+          <div class="accordion " id="accordionPanelsStayOpenExample">
+
+
+
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                  aria-controls="panelsStayOpen-collapseOne">
+                سياسات البرمجه
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body h-25">
+                  انظمة ليامرا البرمجيه تتبع سياسات ونعايير القوانيين العالميه واللوائع الدوليه في نظام الاتفاقات والحقوق والعقود المبرمه
+                  مع العملاء عملائها الكرام , ليامرا شركة مسجله ولها سجل تجاري ورقم ضريبي , ليامرا عضو فعال في الغرفه الصناعيه لتكنولوجيا المعلومات
+                  لذلك كان لزاما علينا ان نلتزم بالجزده والتميز لضمان الاستمراريه والتفوق ,نضمن لعملائنا الحفاظ علي البيانات لسنوات عده دون الحذف 
+                والحفاظ علي سرية البيانات العامه والخاصه بالمؤسسه او الملاك او الموظفين ونضمن التطوير والصيانه الدائمه لانظمة ليامرا مدي الحياه الي جانب السهوله والدقه والكفائه العاليه لكل برامجنا وانظمتنا , مع ليامرا 
+                انت في ايد امينه فالافعال امضي من الاقوال والحقيقه اوقع من الخيال
+                </div>
+              </div>
+            </div>
+
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true"
+                  aria-controls="panelsStayOpen-collapseFour">
+                  سياسات مواقع الويب
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show">
+                <div class="accordion-body h-25">
+                  <strong>ليامرا تلتزم بضمان الكفائه العاليه والسرعه والانسيابيه وعدم العطل او التوقف لموقع عملائها والصيانه المستمره علي مدار الساعه
+                    نتميز بالمرونه وتنوع خطط الاستضافه والتدرج في المساحات والاسعار لنغطي كافة التطلبات من انظمة خطط البلوجر الي السيرفرات السحابيه الضخمه 
+                    , نقدم الاستشارات ةالنصائح لعملائنا في اختيار الاستضافه  والتصميم والخطه المناسبه لكل عميل 
+                    
+                    مع ليامرا 
+                انت في ايد امينه فالافعال امضي من الاقوال والحقيقه اوقع من الخيال
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseTwo">
+                  سياسات الكورسات
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                <div class="accordion-body h-25">
+                 لان ليامرا شركه معتمده ومسجله تجاريا وصناعيا وضريبيا في مجال تكنولوجيا المعلومات فلنا الحق في منح شهادات في مجال تكونولجيا المعلومات 
+                 في تخصصات البرمجه والويب والشبكات واداراة الانظمه التكنولوجيه وكذلك التدريب عليها فلدينا نخبه من المهندسين الحاصلين علي شهادات الهندسه والحاسبات والمعلومات 
+                 في كل التخصصات بمجال التكنولوجيا والذكاء الاصطناعي .. طريقتنا في التدريب والتعلم تعتمد علي الجانب العملي وصناعة المشاريع لان التعلم النظري غير كافي
+                 خصوصا في مجال البرمجه والشبكات و تصميم مواقع الانتر نت 
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree">
+                   الحمايه و الصيانه 
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body h-25">
+              نضمن لك استمرارية وعدم تعطل اجهزتك وبياناتك وبرامجك وانظمة التشغيل بانواعها وينوز لينكس او ماك وكل اجهزة التيارات الخفيفة الملحقه بها 
+              مثل اجهزة الشبكات من الراوتر والسويتشات وسلوك الانتر نت والتيار الكهربي وملحقاته ... نحن نقدم الصيانه المجانيه لعملاء ليامرا لمدة عام كامل 
+              لمستخدمي انظمة وبرامج ليامرا ...الصيانه علي مدار الساعه لا تتوقف الاتصال بنا في اي وقت بجانب الزيارات المستديمه والمجدوله اسبوعيا او شهريا 
+              
+              مع ليامرا 
+              انت في ايد امينه فالافعال امضي من الاقوال والحقيقه اوقع من الخيال
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<hr>
+  <!-- location -->
+   <section>
+  <div class="container mt-5 ">
+     <div class="d-flex  justify-content-center">
+      <h2 class="d-inline-block text-header fw-bold">لـيـامـرا  <i class="fa-solid fa-database text-primary"></i> Lieamra <hr></h2>
+     </div>
+
+      <div class="row d-flex  justify-content-center ">
+          <div class="col-3 pt-5 text-center">
+           
+            <h5 class="text-center fs-4 fw-bold"> Developing-Learning-Web- and Maintenence </h5>
+            <hr>
+           <div class="text-center"> <script src="https://unpkg.com/@lottiefiles/lottie-player@2.0.8/dist/lottie-player.js"></script><lottie-player src="https://lottie.host/e87d336b-938c-46e7-b63f-6ec658dd9756/DXgyYFtCeQ.json" background="##fff" speed="1" style="width: 400px; height: 400px" loop controls autoplay direction="1" mode="normal"></lottie-player></div>
+           <h5 class="text-center fs-4 fw-bold"> Actions speak louder than words </h5>
+          </div>
+          <div class="col-2 pt-5"></div>
+         
+          <div class="col-7 pt-5">
+            <h5 class="text-center fs-4 fw-bold"> موقعنا وعنواننا  </h5>
+            <hr>
+            <p class="text-center"> العنوان ومقر الشركه / مصر - القاهره - خلف مطار القاهره الدولى - النزهة </p>
+            <hr>
+             <div class="container d-flex  "><iframe class="text-center" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3450.6104398662255!2d31.38426283608264!3d30.133958818584965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458173c635aedf7%3A0x68889f121c2652fc!2sAuto365!5e0!3m2!1sar!2ssa!4v1730493316094!5m2!1sar!2ssa" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+             <hr>
+          </div>
+      </div>
+    
+  </div>
+   </section>
+
+  <!-- offcanvas -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel"> SERVICES</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"> </button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="text-center">
+        <a class="nav-link" href="#">
+          <p class="offcanvtitle">مواقع الانترنت</p>
+          <img src="images/lieamra 1 ليامرا.jpg" class="img-thumbnail offcan-img" alt="" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+          <p class="text-bg-primary">برمجه - تصميم - ادارة - صيانه</p>
+        </a>
+      </div>
+      <hr>
+      <div class="text-center">
+        <a class="nav-link" href="#">
+          <p class="offcanvtitle">برامج ليامرا</p>
+          <img src="images/lieamra 3 ليامرا.jpg" class="img-thumbnail offcan-img" alt="" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+          <p class="text-bg-primary">ادارة مؤسسات تعليميه-تجاريه-صحيه</p>
+        </a>
+      </div>
+      <hr>
+      <div class="text-center">
+        <a class="nav-link" href="#">
+          <p class="offcanvtitle">الحمايةوالصيانه</p>
+          <img src="images/lieamra 2 ليامرا.jpg" class="img-thumbnail offcan-img" alt="" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+          <p class="text-bg-primary">سوفتوير-هاردوير-شبكات-بيانات</p>
+        </a>
+      </div>
+      <hr>
+      <div class="text-center">
+        <a class="nav-link" href="#">
+          <p class="offcanvtitle">كورسات وشهادات</p>
+          <img src="images/lieamra 4 ليامرا.jpg" class="img-thumbnail offcan-img" alt="" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+          <p class="text-bg-primary">لغات برمجه-قواعد بيانات-شبكات-ويب</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 " id="exampleModalLabel"> LIEAMRA EDUTECH PROGRAMMES VER0114MA 2025 </h1>
+
+        </div>
+        <div class="modal-body">
+
+          <DIV class="row">
+            <div class="col">
+              <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/lieamra 4 ليامرا.jpg" class="d-block w-100 h-25" style="height:200px !important ;"
+                      alt="...">
+                    <div class="pt-4"> <button type="button" class="btn btn-primary"> اطلب الخدمه <i
+                          class="fa-solid fa-cart-shopping"></i></button></div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/lieamra 3 ليامرا.jpg" class="d-block w-100 h-25" style="height:200px !important ;"
+                      alt="...">
+                    <div class="pt-4"> <button type="button" class="btn btn-primary"> اطلب الخدمه <i
+                          class="fa-solid fa-cart-shopping"></i></button></div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/lieamra 2 ليامرا.jpg" class="d-block w-100 h-25" style="height:200px !important ;"
+                      alt="...">
+                    <div class="pt-4"> <button type="button" class="btn btn-primary"> اطلب الخدمه <i
+                          class="fa-solid fa-cart-shopping"></i></button></div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/lieamra 1 ليامرا.jpg" class="d-block w-100 h-25" style="height:200px !important ;"
+                      alt="...">
+                    <div class="pt-4"> <button type="button" class="btn btn-primary"> اطلب الخدمه <i
+                          class="fa-solid fa-cart-shopping"></i></button></div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                  data-bs-slide="prev">
+
+                  <i class="fa-solid fa-angles-left"></i>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                  data-bs-slide="next">
+
+                  <i class="fa-solid fa-angles-right"></i>
+                </button>
+              </div>
+
+            </div>
+
+            <div class="col">
+              <h4 style="font-size: 20px !important; font: weight 500px; color: blue;">ادارة المؤسسات التعليميه</h4>
+              <hr style="color: crimson !important;">
+              <p>انظمه متكامله لادارة شئون الطلاب والموظفين والحسابات والكونترول والشهادات للكليات العمليه والنظريه
+                والمعاهد والمدارس الي جانب الموقع الاليكترونى الخاص بنشاطك ونشاط المستخدمين والعملاء واععضاء المؤسسه</p>
+            </div>
+
+          </DIV>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+  <script src="script/bootstrap.bundle.min.js"></script>
+  <script src="script/all.js"></script>
+  <script src="script/isotope.pkgd.js"></script>
+  <script src="script/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/cjs/react.production.min.js" integrity="sha512-KzBi/WjenyM5lOPPAuqTsrYGo+5a1sdFcF54I5YvmNnpluJU+dCXeESTNqwYy0ACoL2tVMxggubFkIFh1x3pHQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+<footer class="ftr">
+<div class="container mt-5">
+<div class="row mt-5">
+  <div class="col-4">
+    <h4 class="pt-3 text-center">عن ليامرا</h4>
+    <hr>
+    <p>ليامرا لبرمجة الانظمه الاداريه للمؤسسات المختلفه وبرمجة مواقع الويب والتدريب التكنولوجب و حماية الشبكات وقواعد البيانات نحن شركة مسجله ولها سجل تجاري ورقم ضريبي , ليامرا عضو فعال في الغرفه التجاريه والغرفة الصناعيه لتكنولوجيا المعلومات  شعارنا الافعال امضي من الاقوال ودأبنا متابعة برامجنا وعملائنا علي مدار الساعه شكرا لاستخدامكم انظمة وخدمات ليامرا  </p>
+  </div>
+  <div class="col-2">
+   
+  </div>
+
+  <div class="col-3">
+    <h4 class="pt-3 text-center">تواصل معنا </h4>
+    <hr>
+    <p class="pt-3"> <i class="fa-solid fa-house"></i>  النزهة الجديده - القاهرة - مصر</p>
+    <p><i class="fa-solid fa-envelope"></i> lieamra2010@gmail.com</p>
+    <p><i class="fa-solid fa-mobile-retro"></i> 00201118777068 </p>
+    <p><i class="fa-solid fa-phone"></i> 002 0226972569 </p>
+   
+   
+
+  </div>
+  <div class="col-3 text-center">
+    <h4 class="pt-3 text-center"> تابع ليامرا </h4>
+    <hr>
+   <p class=" fs-3 pt-5" ><i class="fa-brands fa-facebook"></i>  <i class="fa-brands fa-square-x-twitter"></i>
+     <i class="fa-brands fa-square-instagram"></i> <i class="fa-brands fa-square-google-plus"></i>
+     <i class="fa-brands fa-square-whatsapp"></i> <i class="fa-brands fa-telegram"></i> 
+     <h3 class="fs-5"><i class="fa-solid fa-globe"></i> website <i class="fa-solid fa-globe"></i></h3>
+     <h3 class="fs-5"><a href="https://www.lieamra.com/" target="_blank">www.lieamra.com</a></h3>
+    </p> 
+  </div>
+  
+</div>
+
+</div>
+</footer>
+
+</html>
